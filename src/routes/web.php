@@ -19,3 +19,5 @@ use App\Http\Controllers\IndexController;
 Route::get('/', [IndexController::class, 'index']);
 
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
+
+Route::Post('/contacts', [ContactController::class, 'store']);
